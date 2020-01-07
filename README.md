@@ -21,7 +21,7 @@ VimIDE is configured to be efficient for source code exploration and development
 ## **Installation**
 Assume the absolute path of your local repo is `REPO_DIRECTORY` or any you want.  
 ```shell
-$ git clone https://github.com/ZSShen/VimIDE.git REPO_DIRECTORY
+$ git clone https://github.com/xukkTodd/VimIDE.git REPO_DIRECTORY
 $ cd REPO_DIRECTORY
 $ ./install.sh
 ```

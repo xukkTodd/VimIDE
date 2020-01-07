@@ -122,7 +122,7 @@ nnoremap <F12> :YcmCompleter GoTo<CR>
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 
-## Google C++ style
+" Google C++ style
 " 采用 C 风格的缩进，适用于大多数语言
 " 细节调整见下面的 `cinoptions`
 " 你也可以尝试 smartindent 和 autoindent

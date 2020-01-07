@@ -1,15 +1,17 @@
 # **VimIDE**  
+this repo is forked from https://github.com/ZSShen/VimIDE.
+Based on ZSShen/VimIDE, this project modified some configuration for C++ like c++ style ect.
 
 VimIDE is configured to be efficient for source code exploration and development under ***Mac*** and ***Linux***. It is now targeting on modern ***C++*** and ***Python***.    
 
 
 | **Cpp Development Screenshot** |
 |---|
-| <img src="https://raw.githubusercontent.com/ZSShen/VimIDE/master/.demo/ScreenCppDev.png" width="800px"/> |
+| <img src="https://raw.githubusercontent.com/xukkTodd/VimIDE/master/.demo/ScreenCppDev.png" width="800px"/> |
 
 | **Python Development Screenshot** |
 |---|
-| <img src="https://raw.githubusercontent.com/ZSShen/VimIDE/master/.demo/ScreenPythonDev.png" width="800px"/> |
+| <img src="https://raw.githubusercontent.com/xukkTodd/VimIDE/master/.demo/ScreenPythonDev.png" width="800px"/> |
 
 ## **Prerequisite**
 + Make sure you have Vim with version **7.4.143** or above.
@@ -17,7 +19,7 @@ VimIDE is configured to be efficient for source code exploration and development
 
 
 ## **Installation**
-Assume the absolute path of your local repo is `REPO_DIRECTORY`.  
+Assume the absolute path of your local repo is `REPO_DIRECTORY` or any you want.  
 ```shell
 $ git clone https://github.com/ZSShen/VimIDE.git REPO_DIRECTORY
 $ cd REPO_DIRECTORY
@@ -68,5 +70,5 @@ An ultimate source code exploration and completion engine for most of the preval
 
 
 ## **Contact**
-Please contact me via the mail andy.zsshen@gmail.com.  
+Please contact me via the mail xukk171215@gmail.com.  
 Note that the configuration is still under tuning. Recommendation and bug report are desired.  

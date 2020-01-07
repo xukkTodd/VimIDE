@@ -8,7 +8,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -25,20 +25,20 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " The monokai color scheme.
-Plugin 'filfirst/Monota'
+Plug 'filfirst/Monota'
 
 " The project source tree browser.
-Plugin 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 
 " The enhanced editor status bar.
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " The enhanced C++ syntax highlighting.
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plug 'octol/vim-cpp-enhanced-highlight'
 
 " The auto-complete module.
-Plugin 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line
@@ -122,3 +122,30 @@ nnoremap <F12> :YcmCompleter GoTo<CR>
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
 
+## Google C++ style
+" 采用 C 风格的缩进，适用于大多数语言
+" 细节调整见下面的 `cinoptions`
+" 你也可以尝试 smartindent 和 autoindent
+set cindent
+
+" 细节调整，主要为了适应 Google C++ Style
+" t0: 函数返回类型声明不缩进
+" g0: C++ "public:" 等声明缩进一个字符
+" h1: C++ "public:" 等声明后面的语句缩进一个字符
+" N-s: C++ namespace 里不缩进
+" j1: 合理的缩进 Java 或 C++ 的匿名函数，应该也适用于 JS
+set cinoptions=t0,g1,h1,N-s,j1
+
+set smarttab
+
+" 先设置缺省情况，然后根据不同文件类型再次重新设置
+set expandtab | set tabstop=4 | set shiftwidth=4  " Python, CSS, etc.
+"
+" 对 C/C++ 等，制表符和缩进都是两个空格
+au FileType c,cpp,html,htmldjango,lua,javascript,nsis
+    \ set expandtab | set tabstop=2 | set shiftwidth=2
+" Makefile 必须保留制表符，且习惯上占八个空格
+" 不过，这年头谁还会写 Makefile？
+au FileType make set noexpandtab | set tabstop=8 | set shiftwidth=8
+au FileType c,cpp,python,vim set textwidth=80
+set colorcolumn=81

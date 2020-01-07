@@ -8,7 +8,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -25,20 +25,20 @@ Plug 'VundleVim/Vundle.vim'
 "Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " The monokai color scheme.
-Plug 'filfirst/Monota'
+Plugin 'filfirst/Monota'
 
 " The project source tree browser.
-Plug 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
 
 " The enhanced editor status bar.
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " The enhanced C++ syntax highlighting.
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " The auto-complete module.
-Plug 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line

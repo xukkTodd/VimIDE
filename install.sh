@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+mv ~/.vimrc ~/.vimrc.bk
+mv ~/.vim  ~/.vim.bk
 
 # Copy the VimIDE configuration.
 cp .vimrc ~/.vimrc

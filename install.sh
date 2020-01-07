@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-mv ~/.vimrc ~/.vimrc.bk
-mv ~/.vim  ~/.vim.bk
 
 # Copy the VimIDE configuration.
 cp .vimrc ~/.vimrc
@@ -9,6 +7,7 @@ cp .ycm_extra_conf.py ~/.ycm_extra_conf
 
 # Install Vundle plugin.
 echo "Installing Vundle ..."
+rm ~/.vim/bundle/Vundle.vim/ -rf
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo ""
 
@@ -21,4 +20,5 @@ echo "Installing YCM Clang completer ..."
 echo "Need 15 to 20 minutes ..."
 echo ""
 cd ~/.vim/bundle/YouCompleteMe
+git submodule update --init --recursive
 ./install.py --clang-completer

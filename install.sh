@@ -3,7 +3,7 @@
 
 # Copy the VimIDE configuration.
 cp .vimrc ~/.vimrc
-cp .ycm_extra_conf.py ~/.ycm_extra_conf
+cp .ycm_extra_conf.py ~/.ycm_extra_conf.py
 
 # Install Vundle plugin.
 echo "Installing Vundle ..."

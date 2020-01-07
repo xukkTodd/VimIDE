@@ -118,9 +118,12 @@ let g:cpp_experimental_simple_template_highlight=1
 " ---------- YCM Auto Complete ----------
 nnoremap <F12> :YcmCompleter GoTo<CR>
 
-"let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_collect_identifiers_from_tags_files = 1
+
+" close preview window
+set completeopt-=preview
 
 " Google C++ style
 " 采用 C 风格的缩进，适用于大多数语言

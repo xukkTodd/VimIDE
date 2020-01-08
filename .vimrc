@@ -152,3 +152,6 @@ au FileType c,cpp,html,htmldjango,lua,javascript,nsis
 au FileType make set noexpandtab | set tabstop=8 | set shiftwidth=8
 au FileType c,cpp,python,vim set textwidth=80
 set colorcolumn=81
+
+" run code python
+autocmd FileType python nnoremap <buffer> <F9> :exec '!clear; python' shellescape(@%, 1)<cr>

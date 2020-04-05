@@ -21,4 +21,7 @@ echo "Need 15 to 20 minutes ..."
 echo ""
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
+
+
 ./install.py --clang-completer
+#python3 ./install.py --clang-completer

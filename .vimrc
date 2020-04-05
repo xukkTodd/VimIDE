@@ -38,7 +38,8 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " The auto-complete module.
-Plugin 'Valloric/YouCompleteMe', {'do':'python3 install.py --clang-completer'}
+Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe', {'do':'python3 install.py --clang-completer'}
 
 
 " All of your Plugins must be added before the following line

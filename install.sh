@@ -7,7 +7,7 @@ cp .ycm_extra_conf.py ~/.ycm_extra_conf.py
 
 # Install Vundle plugin.
 echo "Installing Vundle ..."
-rm ~/.vim/bundle/Vundle.vim/ -rf
+rm -rf ~/.vim/bundle/Vundle.vim/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo ""
 
